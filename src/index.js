@@ -9,10 +9,10 @@ function cellClick() {
     checkWinner();
     if (cursor == "o") {
       cursor = "x";
-      player = 2;
+      player = 1;
     } else {
       cursor = "o";
-      player = 1;
+      player = 2;
     }
   }
 }
