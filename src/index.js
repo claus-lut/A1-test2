@@ -1,6 +1,6 @@
 var tabletext = "";
 var i, j;
-var cursor = "o";
+var cursor = "x";
 var player = 1;
 
 function cellClick() {
