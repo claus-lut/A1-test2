@@ -1,10 +1,14 @@
-import "./styles.css";
+var tabletext = "";
+var i, j;
 
-document.getElementById("app").innerHTML = `
-<h1>Hello Vanilla!</h1>
-<div>
-  We use the same configuration as Parcel to bundle this sandbox, you can find more
-  info about Parcel 
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-</div>
-`;
+tabletext += "<table>\n";
+for (i = 0; i < 5; i++) {
+  tabletext += "<tr>\n";
+  for (j = 0; j < 5; j++) {
+    tabletext += "<th>    </th>";
+  }
+  tabletext += "</tr>\n";
+}
+tabletext += "</table>\n";
+
+document.getElementById("board").innerHTML = tabletext;
